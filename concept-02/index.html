@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ЭксТехСервис — ремонт узлов спецтехники · Concept 02</title>
+  <meta name="description" content="Ремонт гидронасосов, редукторов хода, распределителей и ДВС спецтехники в Сыктывкаре. Собственная ремонтная база и выездной сервис.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="top">
+  <div class="wrap top__inner">
+    <a class="logo" href="#top" aria-label="ЭксТехСервис — на главную">
+      <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 3v8M20 29v8M3 20h8M29 20h8" stroke="currentColor" stroke-width="2"/></svg>
+      <span><b>ЭксТехСервис</b><small>ремонт спецтехники и узлов</small></span>
+    </a>
+    <nav class="nav" data-nav aria-label="Основное меню">
+      <a href="#anatomy">Узлы</a>
+      <a href="#spec">Спецификация</a>
+      <a href="#terms">Условия</a>
+      <a href="#request">Наряд-заказ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--ink btn--sm top__cta" href="#request">Расчёт</a>
+    <button class="burger" type="button" data-nav-toggle aria-expanded="false" aria-label="Открыть меню">Меню</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO: лист чертежа -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="sheet">
+        <div class="sheet__meta">
+          <span>Лист 01</span>
+          <span>Сыктывкар</span>
+          <span class="hide-sm">Масштаб — по ситуации</span>
+        </div>
+
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="mono-label">Ремонт и обслуживание спецтехники</p>
+            <h1 class="hero__title">Найдём причину.<br><em>Восстановим узел.</em><br>Вернём технику в&nbsp;работу.</h1>
+            <p class="hero__lead">Экскаваторы, погрузчики и экскаваторы-погрузчики, а также гидравлические насосы, редукторы хода, распределители и двигатели. Ремонт на собственной базе или с выездом.</p>
+            <div class="hero__cta">
+              <a class="btn btn--accent" href="#request">Запросить предварительный расчёт</a>
+              <a class="btn btn--line" data-contact="phone">Позвонить</a>
+            </div>
+          </div>
+
+          <figure class="hero__drawing" aria-hidden="true">
+            <svg viewBox="0 0 520 420">
+              <!-- шестерня/насос в разнесённом виде -->
+              <g class="dr-center">
+                <line x1="20" y1="210" x2="500" y2="210"/>
+                <line x1="150" y1="40" x2="150" y2="380"/>
+              </g>
+              <g class="dr-part spin">
+                <circle cx="150" cy="210" r="112" class="teeth"/>
+                <circle cx="150" cy="210" r="96"/>
+                <circle cx="150" cy="210" r="40"/>
+                <circle cx="150" cy="210" r="16"/>
+              </g>
+              <g class="dr-part">
+                <rect x="300" y="150" width="70" height="120" rx="6"/>
+                <rect x="384" y="170" width="44" height="80" rx="4"/>
+                <rect x="442" y="192" width="54" height="36" rx="3"/>
+                <line x1="270" y1="210" x2="300" y2="210" class="dash"/>
+                <line x1="370" y1="210" x2="384" y2="210" class="dash"/>
+                <line x1="428" y1="210" x2="442" y2="210" class="dash"/>
+              </g>
+              <g class="dr-dim">
+                <line x1="300" y1="300" x2="496" y2="300"/>
+                <path d="M300 300l10-5v10zM496 300l-10-5v10z" class="arrow"/>
+                <line x1="300" y1="280" x2="300" y2="310"/><line x1="496" y1="240" x2="496" y2="310"/>
+                <text x="398" y="324">разборка → дефектовка</text>
+              </g>
+              <g class="dr-callout">
+                <line x1="226" y1="128" x2="270" y2="70"/><line x1="270" y1="70" x2="380" y2="70"/>
+                <circle cx="226" cy="128" r="4"/>
+                <text x="276" y="62">поз. 1 — шестерня</text>
+                <line x1="335" y1="150" x2="380" y2="110"/><line x1="380" y1="110" x2="480" y2="110"/>
+                <circle cx="335" cy="150" r="4"/>
+                <text x="386" y="102">поз. 2 — корпус</text>
+              </g>
+            </svg>
+            <figcaption class="sr-only">Схематичный чертёж узла в разнесённом виде</figcaption>
+          </figure>
+        </div>
+
+        <!-- штамп чертежа -->
+        <dl class="stamp">
+          <div><dt>Организация</dt><dd>ЭксТехСервис</dd></div>
+          <div><dt>Адрес</dt><dd>м. Дырнос, 98</dd></div>
+          <div><dt>Режим</dt><dd>Пн–Пт 09–18</dd></div>
+          <div><dt>Формат</dt><dd>База / выезд</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- АНАТОМИЯ: кликабельные узлы -->
+  <section class="anatomy" id="anatomy">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <span class="mono-label">Раздел A</span>
+        <h2>Анатомия машины</h2>
+        <p>Выберите узел на схеме — покажем, чем можем помочь, и подставим его в заявку.</p>
+      </header>
+
+      <div class="anatomy__grid">
+        <div class="machine" data-reveal>
+          <svg viewBox="0 0 800 460" aria-hidden="true" class="machine__svg">
+            <defs>
+              <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="8" class="hatch"/>
+              </pattern>
+            </defs>
+            <line x1="40" y1="420" x2="760" y2="420" class="m-ground"/>
+            <!-- гусеница -->
+            <rect x="120" y="350" width="340" height="60" rx="30" class="m-line"/>
+            <rect x="132" y="360" width="316" height="40" rx="20" class="m-thin"/>
+            <circle cx="150" cy="380" r="24" class="m-line m-node" data-node-shape="travel"/>
+            <circle cx="430" cy="380" r="22" class="m-line"/>
+            <circle cx="220" cy="388" r="11" class="m-thin"/><circle cx="290" cy="388" r="11" class="m-thin"/><circle cx="360" cy="388" r="11" class="m-thin"/>
+            <!-- платформа -->
+            <rect x="110" y="235" width="270" height="105" class="m-line"/>
+            <rect x="120" y="248" width="100" height="62" class="m-line m-node" data-node-shape="engine" fill="url(#hatch)"/>
+            <path d="M232 290 h44 v30 h-44 z" class="m-line m-node" data-node-shape="pump"/>
+            <circle cx="254" cy="305" r="9" class="m-thin"/>
+            <!-- кабина -->
+            <path d="M262 235 V120 H340 L372 190 V235" class="m-line"/>
+            <path d="M274 132 H332 L356 186 H274 Z" class="m-thin"/>
+            <!-- распределитель -->
+            <rect x="380" y="272" width="46" height="36" class="m-line m-node" data-node-shape="valve"/>
+            <line x1="388" y1="280" x2="418" y2="280" class="m-thin"/><line x1="388" y1="290" x2="418" y2="290" class="m-thin"/><line x1="388" y1="300" x2="418" y2="300" class="m-thin"/>
+            <!-- стрела -->
+            <path d="M372 250 L536 96 L560 110 L404 262 Z" class="m-line"/>
+            <path d="M548 103 L650 160 L640 176 L540 120" class="m-line"/>
+            <path d="M650 168 L688 330 L668 334 L632 176" class="m-line"/>
+            <path d="M676 330 L740 324 L752 378 L700 394 Z" class="m-line"/>
+            <line x1="400" y1="236" x2="500" y2="150" class="m-cyl"/>
+            <!-- осевые и размеры -->
+            <line x1="40" y1="445" x2="760" y2="445" class="m-dim"/>
+            <line x1="110" y1="430" x2="110" y2="452" class="m-dim"/><line x1="752" y1="430" x2="752" y2="452" class="m-dim"/>
+            <text x="430" y="440" class="m-text">габарит — по модели техники</text>
+          </svg>
+
+          <button class="hotspot" type="button" style="--x:20.6%;--y:60%" data-node="engine" aria-label="Двигатель внутреннего сгорания">1</button>
+          <button class="hotspot" type="button" style="--x:31.8%;--y:66.5%" data-node="pump" aria-label="Гидравлический насос">2</button>
+          <button class="hotspot" type="button" style="--x:50.4%;--y:63%" data-node="valve" aria-label="Гидрораспределитель">3</button>
+          <button class="hotspot" type="button" style="--x:18.75%;--y:82.6%" data-node="travel" aria-label="Редуктор хода">4</button>
+          <button class="hotspot" type="button" style="--x:39%;--y:38%" data-node="machine" aria-label="Техника целиком">5</button>
+        </div>
+
+        <aside class="node-card" aria-live="polite" data-reveal>
+          <p class="mono-label" data-node-pos>Поз. 2</p>
+          <h3 data-node-title>Гидравлический насос</h3>
+          <p data-node-text>Сердце гидросистемы: если стрела «не тянет», техника медленно реагирует или насос шумит — узел стоит проверить. Ремонтируем на собственной базе.</p>
+          <ul class="node-card__tags" data-node-tags>
+            <li>диагностика</li><li>ремонт</li><li>обслуживание</li>
+          </ul>
+          <a class="btn btn--ink" href="#request" data-prefill="Гидравлический насос" data-node-cta>Рассчитать ремонт узла</a>
+          <div class="node-card__tabs" role="tablist" aria-label="Узлы">
+            <button type="button" role="tab" data-node="engine">1 ДВС</button>
+            <button type="button" role="tab" data-node="pump">2 Насос</button>
+            <button type="button" role="tab" data-node="valve">3 Распред.</button>
+            <button type="button" role="tab" data-node="travel">4 Редуктор</button>
+            <button type="button" role="tab" data-node="machine">5 Машина</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- СПЕЦИФИКАЦИЯ УСЛУГ -->
+  <section class="spec" id="spec">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <span class="mono-label">Раздел B</span>
+        <h2>Спецификация услуг</h2>
+        <p>Что берём в работу. Нажмите «расчёт» в строке, чтобы заполнить наряд-заказ.</p>
+      </header>
+
+      <div class="table" role="table" aria-label="Спецификация услуг" data-reveal>
+        <div class="table__row table__row--head" role="row">
+          <span role="columnheader">Поз.</span><span role="columnheader">Объект</span><span role="columnheader">Группа</span><span role="columnheader" class="ta-r">Действие</span>
+        </div>
+        <div class="table__row" role="row"><span role="cell">01</span><span role="cell">Экскаваторы</span><span role="cell">Техника</span><a role="cell" class="ta-r" href="#request" data-prefill="Экскаватор">расчёт →</a></div>
+        <div class="table__row" role="row"><span role="cell">02</span><span role="cell">Погрузчики</span><span role="cell">Техника</span><a role="cell" class="ta-r" href="#request" data-prefill="Погрузчик">расчёт →</a></div>
+        <div class="table__row" role="row"><span role="cell">03</span><span role="cell">Экскаваторы-погрузчики</span><span role="cell">Техника</span><a role="cell" class="ta-r" href="#request" data-prefill="Экскаватор-погрузчик">расчёт →</a></div>
+        <div class="table__row" role="row"><span role="cell">04</span><span role="cell">Гидравлические насосы</span><span role="cell">Гидравлика</span><a role="cell" class="ta-r" href="#request" data-prefill="Гидравлический насос">расчёт →</a></div>
+        <div class="table__row" role="row"><span role="cell">05</span><span role="cell">Распределители</span><span role="cell">Гидравлика</span><a role="cell" class="ta-r" href="#request" data-prefill="Гидрораспределитель">расчёт →</a></div>
+        <div class="table__row" role="row"><span role="cell">06</span><span role="cell">Редукторы хода</span><span role="cell">Ходовая часть</span><a role="cell" class="ta-r" href="#request" data-prefill="Редуктор хода">расчёт →</a></div>
+        <div class="table__row" role="row"><span role="cell">07</span><span role="cell">Двигатели внутреннего сгорания</span><span role="cell">Силовая установка</span><a role="cell" class="ta-r" href="#request" data-prefill="Двигатель (ДВС)">расчёт →</a></div>
+        <div class="table__row" role="row"><span role="cell">08</span><span role="cell">Запасные части</span><span role="cell">Снабжение</span><a role="cell" class="ta-r" href="#request" data-prefill="Запасные части">запрос →</a></div>
+      </div>
+
+      <div class="brands" data-reveal>
+        <span class="mono-label">Марки (по брифу)</span>
+        <span class="brands__item">Hitachi</span><span class="brands__item">JCB</span><span class="brands__item">Volvo</span><span class="brands__item">Hyundai</span>
+        <span class="brands__note">* полный перечень — уточнить у клиента</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТЕХНИЧЕСКИЕ УСЛОВИЯ = преимущества -->
+  <section class="terms" id="terms">
+    <div class="wrap">
+      <header class="sec-head sec-head--inv" data-reveal>
+        <span class="mono-label">Раздел C</span>
+        <h2>Технические условия</h2>
+        <p>Пять пунктов, на которых строится работа сервиса.</p>
+      </header>
+      <ol class="terms__list">
+        <li data-reveal><span class="terms__code">ТУ-1</span><h3>Опытные специалисты</h3><p>Ремонт выполняют механики, знакомые с устройством гидравлики, ходовой и двигателей спецтехники.</p></li>
+        <li data-reveal><span class="terms__code">ТУ-2</span><h3>Гарантия на работы</h3><p>На выполненный ремонт предоставляется гарантия. Срок и условия — <mark>уточнить у клиента</mark>.</p></li>
+        <li data-reveal><span class="terms__code">ТУ-3</span><h3>Выездной сервис</h3><p>Специалисты выезжают к технике, если её нельзя доставить на базу.</p></li>
+        <li data-reveal><span class="terms__code">ТУ-4</span><h3>Собственная ремонтная база</h3><p>Разборка и ремонт узлов — в мастерской, с нужной оснасткой.</p></li>
+        <li data-reveal><span class="terms__code">ТУ-5</span><h3>Приемлемые цены</h3><p>Предварительный расчёт — по описанию неисправности, до начала работ.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- НАРЯД-ЗАКАЗ -->
+  <section class="request" id="request">
+    <div class="wrap request__grid">
+      <div class="request__copy" data-reveal>
+        <span class="mono-label">Раздел D</span>
+        <h2>Наряд-заказ на&nbsp;предварительный расчёт</h2>
+        <p>Заполните бланк — свяжемся, уточним детали и подготовим ориентир по стоимости.</p>
+        <ul class="request__alt">
+          <li><a data-contact="phone">☎ Позвонить</a></li>
+          <li><a data-contact="max">✉ Написать в MAX</a></li>
+          <li><a data-contact="email">@ Написать на почту</a></li>
+        </ul>
+      </div>
+
+      <div class="blank" data-reveal>
+        <div class="blank__head">
+          <span>Наряд-заказ № ____</span>
+          <span>Сыктывкар</span>
+        </div>
+        <form class="form" data-ets-form>
+          <div class="field" data-field>
+            <label for="f-name">01 · Заказчик</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Имя или название компании" data-validate="name">
+          </div>
+          <div class="field" data-field>
+            <label for="f-phone">02 · Телефон</label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" data-validate="phone">
+          </div>
+          <div class="field field--full" data-field>
+            <label for="f-eq">03 · Объект ремонта</label>
+            <select id="f-eq" name="equipment" data-validate="equipment">
+              <option value="">— выбрать —</option>
+              <option>Экскаватор</option>
+              <option>Погрузчик</option>
+              <option>Экскаватор-погрузчик</option>
+              <option>Гидравлический насос</option>
+              <option>Редуктор хода</option>
+              <option>Гидрораспределитель</option>
+              <option>Двигатель (ДВС)</option>
+              <option>Запасные части</option>
+              <option>Другое</option>
+            </select>
+          </div>
+          <fieldset class="field field--full radios">
+            <legend>04 · Где находится техника</legend>
+            <label><input type="radio" name="place" value="base" checked> Доставим на базу</label>
+            <label><input type="radio" name="place" value="visit"> Нужен выезд</label>
+            <label><input type="radio" name="place" value="unknown"> Пока не знаю</label>
+          </fieldset>
+          <div class="field field--full" data-field>
+            <label for="f-msg">05 · Описание неисправности</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Марка, модель, что происходит, когда началось" data-validate="message"></textarea>
+          </div>
+          <div class="field field--full" data-field>
+            <label class="check"><input type="checkbox" name="consent" data-validate="consent"> Согласен на обработку персональных данных</label>
+          </div>
+          <div class="field--full blank__foot">
+            <button class="btn btn--accent" type="submit">Отправить наряд-заказ</button>
+            <span class="mono-note">демо-форма · данные не отправляются</span>
+          </div>
+        </form>
+        <div class="form-success" data-form-success hidden tabindex="-1">
+          <p class="mono-label">Статус: принято</p>
+          <h3>Спасибо, <span data-success-name></span>!</h3>
+          <p>Наряд-заказ по позиции «<span data-success-equipment></span>» сформирован. Мы свяжемся с вами для уточнения деталей.</p>
+          <p class="mono-note">Демо-режим: отправка в MAX/почту будет подключена после получения доступов.</p>
+          <button class="btn btn--line" type="button" data-form-again>Новый наряд-заказ</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ как штамп -->
+  <section class="contacts" id="contacts">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <span class="mono-label">Раздел E</span>
+        <h2>Контакты</h2>
+      </header>
+      <div class="stamp-big" data-reveal>
+        <div class="stamp-big__cell stamp-big__cell--wide">
+          <span class="mono-label">Адрес</span>
+          <p class="stamp-big__value">Сыктывкар, м.&nbsp;Дырнос,&nbsp;98</p>
+          <a class="link" data-map-link>Открыть в Яндекс Картах ↗</a>
+        </div>
+        <div class="stamp-big__cell">
+          <span class="mono-label">График</span>
+          <p class="stamp-big__value">Пн–Пт<br>09:00–18:00</p>
+        </div>
+        <div class="stamp-big__cell">
+          <span class="mono-label">Телефон</span>
+          <a class="stamp-big__value" data-contact="phone"><span data-contact-value="phone"></span></a>
+        </div>
+        <div class="stamp-big__cell">
+          <span class="mono-label">Почта</span>
+          <a class="stamp-big__value" data-contact="email"><span data-contact-value="email"></span></a>
+        </div>
+        <div class="stamp-big__cell">
+          <span class="mono-label">MAX</span>
+          <a class="stamp-big__value" data-contact="max"><span data-contact-value="max"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span>© <span data-year></span> ЭксТехСервис · написание названия уточняется</span>
+    <span>Concept 02 · «Чертёж» · <a href="../index.html">все концепции</a></span>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn--line" data-contact="phone">Позвонить</a>
+  <a class="btn btn--accent" href="#request">Расчёт</a>
+</div>
+
+<script src="../shared/config.js"></script>
+<script src="../shared/app.js"></script>
+<script>
+  // Интерактивная схема: узлы машины → карточка услуги
+  (function () {
+    var nodes = {
+      engine: {
+        pos: 'Поз. 1', title: 'Двигатель внутреннего сгорания',
+        text: 'Плохой пуск, потеря мощности, дым, перегрев или посторонние стуки — повод показать двигатель механику. Работаем с ДВС спецтехники.',
+        tags: ['диагностика', 'ремонт', 'обслуживание'], prefill: 'Двигатель (ДВС)', cta: 'Рассчитать ремонт ДВС'
+      },
+      pump: {
+        pos: 'Поз. 2', title: 'Гидравлический насос',
+        text: 'Сердце гидросистемы: если стрела «не тянет», техника медленно реагирует или насос шумит — узел стоит проверить. Ремонтируем на собственной базе.',
+        tags: ['диагностика', 'ремонт', 'обслуживание'], prefill: 'Гидравлический насос', cta: 'Рассчитать ремонт насоса'
+      },
+      valve: {
+        pos: 'Поз. 3', title: 'Гидрораспределитель',
+        text: 'Распределяет поток масла по рабочим органам. Рывки, самопроизвольное опускание стрелы, течи по секциям — типичные признаки неисправности узла.',
+        tags: ['диагностика', 'ремонт'], prefill: 'Гидрораспределитель', cta: 'Рассчитать ремонт распределителя'
+      },
+      travel: {
+        pos: 'Поз. 4', title: 'Редуктор хода',
+        text: 'Отвечает за движение гусеничной техники. Шум, люфт, течь масла или потеря тяги на одной стороне — повод для диагностики.',
+        tags: ['диагностика', 'ремонт', 'обслуживание'], prefill: 'Редуктор хода', cta: 'Рассчитать ремонт редуктора'
+      },
+      machine: {
+        pos: 'Поз. 5', title: 'Техника целиком',
+        text: 'Экскаваторы, погрузчики и экскаваторы-погрузчики. Если причина неисправности неочевидна — начнём с общей диагностики: на базе или с выездом.',
+        tags: ['экскаваторы', 'погрузчики', 'экскаваторы-погрузчики'], prefill: 'Экскаватор', cta: 'Запросить расчёт по технике'
+      }
+    };
+
+    var card = document.querySelector('.node-card');
+    var pos = card.querySelector('[data-node-pos]');
+    var title = card.querySelector('[data-node-title]');
+    var text = card.querySelector('[data-node-text]');
+    var tags = card.querySelector('[data-node-tags]');
+    var cta = card.querySelector('[data-node-cta]');
+
+    function select(key) {
+      var n = nodes[key];
+      if (!n) return;
+      pos.textContent = n.pos;
+      title.textContent = n.title;
+      text.textContent = n.text;
+      tags.innerHTML = n.tags.map(function (t) { return '<li>' + t + '</li>'; }).join('');
+      cta.textContent = n.cta;
+      cta.setAttribute('data-prefill', n.prefill);
+      document.querySelectorAll('[data-node]').forEach(function (b) {
+        var on = b.getAttribute('data-node') === key;
+        b.classList.toggle('is-active', on);
+        b.setAttribute(b.getAttribute('role') === 'tab' ? 'aria-selected' : 'aria-pressed', on ? 'true' : 'false');
+      });
+      document.querySelectorAll('[data-node-shape]').forEach(function (s) {
+        s.classList.toggle('is-active', s.getAttribute('data-node-shape') === key);
+      });
+      card.classList.remove('is-swap'); void card.offsetWidth; card.classList.add('is-swap');
+    }
+
+    document.querySelectorAll('[data-node]').forEach(function (b) {
+      b.addEventListener('click', function () { select(b.getAttribute('data-node')); });
+    });
+    select('pump');
+  })();
+</script>
+</body>
+</html>

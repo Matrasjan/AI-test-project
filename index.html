@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ЭксТехСервис — три концепции лендинга</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #f4f4f2; --text: #151616; --muted: #66686b; --line: #dcdcd8; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 400 16px/1.55 'Inter', system-ui, sans-serif; overflow-x: clip; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: clamp(32px, 6vw, 80px) clamp(16px, 4vw, 40px); }
+    .eyebrow { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0; }
+    h1 { margin: 12px 0 16px; font-size: clamp(32px, 5vw, 60px); line-height: 1.05; letter-spacing: -.03em; }
+    .lead { max-width: 680px; color: var(--muted); font-size: 18px; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
+    .card { display: flex; flex-direction: column; border-radius: 20px; overflow: hidden; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; transition: transform .25s ease, box-shadow .25s ease; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,.08); }
+    .card:focus-visible { outline: 3px solid #1640a8; outline-offset: 4px; }
+    .card__preview { aspect-ratio: 4 / 3; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; position: relative; overflow: hidden; }
+    .card__body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .card__num { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+    .card h2 { margin: 0; font-size: 22px; letter-spacing: -.01em; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .card__go { margin-top: auto; padding-top: 12px; font-weight: 600; }
+
+    .p1 { background: #141517; color: #f1efe9; }
+    .p1 b { font: 700 44px/.9 'Oswald', Impact, 'Arial Narrow', sans-serif; text-transform: uppercase; }
+    .p1 b span { color: #ffc400; display: block; }
+    .p1::after { content: ''; position: absolute; left: -10%; right: -10%; top: 22%; height: 22px; background: repeating-linear-gradient(45deg, #ffc400 0 14px, #141517 14px 28px); transform: rotate(-4deg); }
+
+    .p2 { background-color: #f3f1ea; color: #0e2a6e; background-image: linear-gradient(rgba(22,64,168,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(22,64,168,.12) 1px, transparent 1px); background-size: 20px 20px; border-bottom: 1px solid #1640a8; }
+    .p2 b { font: 600 30px/1.1 'IBM Plex Sans', system-ui, sans-serif; letter-spacing: -.02em; }
+    .p2 small { font: 500 12px 'IBM Plex Mono', monospace; color: #1640a8; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 8px; }
+    .p2::before { content: ''; position: absolute; right: 24px; top: 24px; width: 110px; height: 110px; border-radius: 50%; border: 10px dashed #1640a8; opacity: .8; }
+
+    .p3 { background: radial-gradient(120% 120% at 0 0, #1e5641, #133d2e 60%); color: #fffaf2; }
+    .p3 b { font: 700 30px/1.05 'Unbounded', system-ui, sans-serif; letter-spacing: -.03em; }
+    .p3 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+    .p3 .chips span { padding: 6px 12px; border-radius: 999px; background: #fffaf2; color: #133d2e; font-size: 12px; font-weight: 600; }
+    .p3 .chips span:first-child { background: #ff6a2b; color: #fff; }
+
+    .notes { margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; font-size: 14px; color: var(--muted); }
+    .notes b { display: block; color: var(--text); margin-bottom: 4px; }
+    @media (max-width: 960px) { .grid, .notes { grid-template-columns: 1fr; } .card__preview { aspect-ratio: 16 / 9; } }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=IBM+Plex+Sans:wght@600&family=IBM+Plex+Mono:wght@500&family=Unbounded:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">Тестовое задание · веб-дизайн + AI-разработка</p>
+    <h1>ЭксТехСервис: три концепции лендинга</h1>
+    <p class="lead">Ремонт и обслуживание спецтехники, Сыктывкар. Один бриф — три самостоятельных подхода к первому экрану, сетке, подаче услуг и сценарию заявки.</p>
+
+    <div class="grid">
+      <a class="card" href="concept-01/index.html">
+        <div class="card__preview p1"><b>Ремонт <span>спецтехники</span></b></div>
+        <div class="card__body">
+          <span class="card__num">Concept 01</span>
+          <h2>«Тяжёлый металл»</h2>
+          <p>Тёмный индустриальный стиль, гигантская типографика, сигнальный жёлтый. Уверенность и мощь — для тех, кто выбирает «серьёзный сервис».</p>
+          <span class="card__go">Открыть →</span>
+        </div>
+      </a>
+      <a class="card" href="concept-02/index.html">
+        <div class="card__preview p2"><small>Лист 01 · Анатомия машины</small><b>Найдём причину. Восстановим узел.</b></div>
+        <div class="card__body">
+          <span class="card__num">Concept 02</span>
+          <h2>«Чертёж»</h2>
+          <p>Инженерная калька, интерактивная схема экскаватора с кликабельными узлами и бланк «наряд-заказа». Экспертиза через устройство техники.</p>
+          <span class="card__go">Открыть →</span>
+        </div>
+      </a>
+      <a class="card" href="concept-03/index.html">
+        <div class="card__preview p3"><b>Техника встала?</b><div class="chips"><span>Гидронасос</span><span>Экскаватор</span><span>Двигатель</span></div></div>
+        <div class="card__body">
+          <span class="card__num">Concept 03</span>
+          <h2>«Маршрут к ремонту»</h2>
+          <p>Тёплый человечный тон, мягкие формы и мастер заявки из трёх вопросов прямо на первом экране. Минимум усилий до обращения.</p>
+          <span class="card__go">Открыть →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="notes">
+      <p><b>Контакты</b>Телефон, почта и MAX не предоставлены — на сайтах стоят заглушки «уточняется у клиента». Заполняются в одном файле: <code>shared/config.js</code>.</p>
+      <p><b>Формы</b>Демонстрационные: валидация и сообщение об успехе работают, реальная отправка не настроена.</p>
+      <p><b>Изображения</b>Все иллюстрации — собственные SVG, нарисованные в коде. Это не фотографии реального сервиса.</p>
+    </div>
+  </main>
+</body>
+</html>
